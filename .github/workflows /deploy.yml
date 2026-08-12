@@ -19,12 +19,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Copy newfile to feed.txt
+      - name: Copy newfile2 to feed2.txt
         run: |
           if [ -f "newfile2" ]; then
             cp newfile2 feed2.txt
           else
-            echo "Error: newfile not found!" >&2
+            echo "Error: newfile2 not found!" >&2
             exit 1
           fi
 
