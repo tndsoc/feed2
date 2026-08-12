@@ -21,8 +21,8 @@ jobs:
 
       - name: Copy newfile to feed.txt
         run: |
-          if [ -f "newfile" ]; then
-            cp newfile feed2.txt
+          if [ -f "newfile2" ]; then
+            cp newfile2 feed2.txt
           else
             echo "Error: newfile not found!" >&2
             exit 1
